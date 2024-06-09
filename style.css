@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Harlech Mono Semilight';
+    src: url(https://delivercdn.pages.dev/barclay/fonts/HarlechMono-SemiLight.ttf);
+}
+
+@font-face {
+    font-family: 'Harlech Mono Semibold';
+    src: url(https://delivercdn.pages.dev/barclay/fonts/HarlechMono-SemiBold.ttf);
+}
+
+html, body {
+    font-family: 'Harlech Mono Semilight';
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #202124;
+    overflow: hidden;
+}
+
+.user-text {
+    font-family: 'Harlech Mono Semibold';
+    color: #83f3bc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0px;
+}
+
+.folder-text {
+    font-family: 'Harlech Mono Semilight';
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0px;
+}
+
+.normal-text {
+    font-family: 'Harlech Mono Semilight';
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 0px;
+}
+
+.input-field {
+    font-family: 'Harlech Mono Semilight';
+    font-size: 20px;
+    color: #ffffff;
+    caret-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+::selection {
+    background-color: #669DF6;
+    color: #000;
+}
+
+::-moz-selection {
+    background-color: #669DF6;
+    color: #000;
+}
+
+.terminal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.terminal-header {
+    background-color: #202124;
+    padding: 2px;
+}
+
+.terminal-body {
+    flex: 1;
+    padding: 2px;
+    overflow-y: auto;
+}
+
+.terminal-body hr {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 10px 0;
+}
+
+.terminal-body::-webkit-scrollbar {
+    width: 12px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+    background: #202124;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border: 3px solid #202124;
+    border-radius: 10px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+    background-color: #9f9f9f;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:active {
+    background-color: #9f9f9f;
+}
+
+.input-line {
+    padding-left: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #202124;
+}
+
+.prompt {
+    color: #ffffff;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+@media (max-width: 600px) {
+    html, body {
+        font-size: 20px;
+    }
+
+    .input-line {
+        font-size: 20px;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #202124;
+    }
+
+    .input-field {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
